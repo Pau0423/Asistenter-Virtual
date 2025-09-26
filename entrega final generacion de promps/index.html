@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secretaría Remota Personalizada - Asistente Virtual</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>CiP estudio</h1>
+        <p>Secretaría Remota Personalizada</p>
+      </div>
+
+      <div class="chat-container" id="chatContainer"></div>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div>El asistente está pensando...</div>
+      </div>
+
+      <div class="input-container">
+        <div class="input-group">
+          <div class="input-row">
+            <input
+              type="text"
+              id="messageInput"
+              placeholder="Escribe tu mensaje aquí..."
+            />
+            <input
+              type="file"
+              id="imageInput"
+              accept="image/*"
+              onchange="previewImage()"
+              title="Subir imagen para análisis"
+            />
+            <button class="btn">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
